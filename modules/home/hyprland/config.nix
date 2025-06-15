@@ -157,7 +157,7 @@ in
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, exec, toggle-float"
         "$mainMod, D, exec, rofi -show drun || pkill rofi"
-        "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
+        "$mainMod SHIFT, D, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
         "ALT, Escape, exec, hyprlock"
@@ -177,9 +177,9 @@ in
         # "$mainMod SHIFT, W, exec, vm-start"
 
         # screenshot
-        ",Print, exec, screenshot --copy"
-        "$mainMod, Print, exec, screenshot --save"
-        "$mainMod SHIFT, Print, exec, screenshot --swappy"
+        ",Home, exec, screenshot --copy"
+        "$mainMod, Home, exec, screenshot --save"
+        "$mainMod SHIFT, Home, exec, screenshot --swappy"
 
         # switch focus
         "$mainMod, left,  movefocus, l"
@@ -383,7 +383,7 @@ in
     };
 
     extraConfig = "
-      monitor=DP-1,2560x144@144,auto-left,auto
+      monitor=DP-1,2560x1440@144,auto-left,auto
       monitor=DP-2,3440x1440@144,auto-right,auto
 
       xwayland {
