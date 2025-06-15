@@ -6,9 +6,6 @@
 
 My personal NixOS configuration built for gaming performance and professional IT work. Based on the excellent [Frost-Phoenix/nixos-config](https://github.com/Frost-Phoenix/nixos-config) with heavy customizations for my workflow.
 
-[Desktop Preview]
-[image](https://github.com/user-attachments/assets/af0068f7-eec7-43ed-af7c-d171791e618c)
-
 
 ## 🔧 Hardware Specifications
 
