@@ -121,6 +121,12 @@
 
       source ~/.p10k.zsh
 
+      # Run maxfetch on new interactive terminal sessions
+      # Skip if we're in tmux, SSH session, or subshell to avoid spam
+      if [[ $- == *i* ]] && [[ -z "$TMUX" ]] && [[ -z "$SSH_CONNECTION" ]] && [[ $SHLVL -eq 1 ]]; then
+        maxfetch
+      fi
+
       # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
       # - The first argument to the function ($1) is the base path to start traversal
       # - See the source code (completion.{bash,zsh}) for the details.
