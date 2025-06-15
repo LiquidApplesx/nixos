@@ -47,7 +47,9 @@ in
     fsType = "ext4";
     options = [
       "defaults"
-      "users" 
+      "user" 
+      "rw"
+      "exec"
       "nofail"
       "x-gvfs-show"
     ];
