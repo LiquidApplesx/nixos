@@ -5,6 +5,7 @@
     # (discord.override {
     #  withVencord = true;
     # })
-    webcord-vencord
+    # webcord-vencord
+    vesktop # better discord client with vencord built-in
   ];
 }
