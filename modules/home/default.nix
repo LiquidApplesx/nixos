@@ -1,6 +1,7 @@
-{ ... }:
+{ inputs, ... }:
 {
   imports = [
+    inputs.nixvim.homeManagerModules.nixvim
     ./aseprite/aseprite.nix           # pixel art editor
     ./audacious.nix                   # music player
     ./bat.nix                         # better cat command
