@@ -39,7 +39,6 @@
     ./vscodium # vscode fork
     ./waybar # status bar
     ./waypaper.nix # GUI wallpaper picker
-    ./work.nix # Work related programs
     ./xdg-mimes.nix # xdg config
     ./zsh # shell
   ];
