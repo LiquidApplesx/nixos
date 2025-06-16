@@ -385,6 +385,7 @@ in
     extraConfig = "
       monitor=DP-1,2560x1440@144,auto-left,auto
       monitor=DP-2,3440x1440@144,auto-right,auto
+      monitor=eDP-1,1920x1080@60,auto,auto
 
       xwayland {
         force_zero_scaling = true
