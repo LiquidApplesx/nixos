@@ -7,5 +7,7 @@ in
     microsoft-edge
     teams-for-linux
     splashtop-business
+    evolution
+    evolution-ews
   ];
 }
