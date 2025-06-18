@@ -8,6 +8,8 @@
     # inputs.nix-gaming.packages.${pkgs.system}.wine-ge
     protonup-qt
     protontricks
+    dxvk
+    vkd3d-proton
   
     ## Minecraft
     # prismlauncher
@@ -28,7 +30,8 @@
     ## Emulation
     sameboy
     snes9x
-    # cemu
-    # dolphin-emu
+    cemu
+    dolphin-emu
+    ryujinx
   ];
 }
