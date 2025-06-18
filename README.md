@@ -46,35 +46,12 @@ My personal NixOS configuration built for gaming performance and professional IT
 - **AMD GPU drivers** optimized for RX 7700 XT
 - **GameMode** for automatic performance optimization
 - **Low-latency audio** configuration for competitive gaming
-- **Dual monitor gaming** with proper workspace management
-
-### 💼 Professional IT Tools
-- **Remote Access**: Remmina, VNC, RDP clients
-- **Network Analysis**: Wireshark, nmap, network monitoring tools
-- **Multiple Browsers**: Firefox, Chrome, Edge for compatibility testing
-- **Communication**: Slack, Discord, Teams, Zoom
-- **Development**: Complete development environment with modern tooling
 
 ### ⚡ Performance & Efficiency
 - **Minimal overhead** - Hyprland for maximum gaming performance
 - **Fast rebuilds** - Modular configuration structure
 - **AMD optimizations** - Hardware-specific optimizations
 - **Declarative** - Entire system reproducible from configuration
-
-## 🚀 Quick Commands
-
-```bash
-# System Management
-nix-switch              # Rebuild and switch configuration
-nix-update              # Update flake inputs and rebuild  
-nix-test                # Test configuration without switching
-nix-clean               # Clean old generations
-
-# Development Shortcuts
-cdnix                   # Open config directory in VSCodium
-g                       # Launch lazygit
-y                       # Launch yazi file manager
-```
 
 ## 📦 Installation
 
@@ -101,7 +78,7 @@ y                       # Launch yazi file manager
 
 4. **Follow the prompts**:
    - Enter your username when prompted
-   - Choose "**desktop**" when asked for host type
+   - Choose which host you're on when asked for host type
    - Choose whether to install Aseprite (skip to save time)
 
 5. **Reboot and enjoy**:
@@ -124,6 +101,13 @@ nixos/
 │   │   ├── hardware-configuration.nix
 │   │   └── local-packages.nix
 │   └── 📁 laptop/            # Laptop config (if needed)
+│   │   ├── default.nix       # Host configuration
+│   │   ├── hardware-configuration.nix
+│   │   └── local-packages.nix
+│   └── 📁 vm/            # vm config (if needed)
+│   │   ├── default.nix       # Host configuration
+│   │   ├── hardware-configuration.nix
+│   │   └── local-packages.nix
 ├── 📁 modules/               # Modular system configuration
 │   ├── 📁 core/              # Core system configuration
 │   │   ├── bootloader.nix
@@ -131,9 +115,10 @@ nixos/
 │   │   ├── network.nix
 │   │   └── ...
 │   └── 📁 home/              # Home Manager configuration
-│       ├── 📁 hyprland/      # Window manager settings
-│       ├── 📁 programs/      # Application configurations
-│       └── 📁 themes/        # Theming and styling
+│   |   ├── 📁 hyprland/      # Window manager settings
+│   |   ├── 📁 programs/      # Application configurations
+│   |   ├── 📁 themes/        # Theming and styling
+│   │   └── ...
 ├── 📁 wallpapers/            # Wallpaper collection
 └── 📁 LICENSE                # License file
 ```
@@ -173,9 +158,7 @@ nixos/
 
 - [x] **Base Configuration** - Hyprland + Gruvbox setup
 - [x] **Repository Migration** - Move to personal repository
-- [ ] **Gaming Optimizations** - Enhanced Steam and GPU configuration
-- [ ] **Dual Monitor Workflow** - Optimized workspace management
-- [ ] **IT Tools Integration** - Professional remote access and monitoring tools
+- [x] **Gaming Optimizations** - Enhanced Steam and GPU configuration
 - [ ] **Custom Scripts** - Automation and productivity enhancements
 - [ ] **Documentation** - Comprehensive setup and usage guides
 
