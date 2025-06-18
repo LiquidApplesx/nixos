@@ -141,6 +141,7 @@ in
 
       binds = {
         movefocus_cycles_fullscreen = true;
+        disable_keybind_grabbing = true;
       };
 
       bind = [
