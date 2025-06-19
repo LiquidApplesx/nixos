@@ -7,6 +7,8 @@
     obs-studio
     pavucontrol
     soundwireserver
+    spotify
+    spicetify-cli
     video-trimmer
     vlc
 
