@@ -21,5 +21,8 @@
     ## Python
     python3
     python312Packages.ipython
+
+    ## Game Development
+    godot_4
   ];
 }
