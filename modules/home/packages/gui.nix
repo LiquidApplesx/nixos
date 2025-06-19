@@ -18,6 +18,7 @@
     dconf-editor
     gnome-disk-utility
     mission-center # GUI resources monitor
+    proton-pass
     zenity
 
     ## Level editor
