@@ -14,6 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
     hyprland.url = "github:hyprwm/Hyprland";
 
     hypr-contrib = {

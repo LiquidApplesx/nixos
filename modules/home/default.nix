@@ -2,6 +2,7 @@
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
+    inputs.spicetify-nix.homeManagerModules.default
     ./aseprite/aseprite.nix # pixel art editor
     ./audacious.nix # music player
     ./bat.nix # better cat command
@@ -30,6 +31,7 @@
     ./retroarch.nix
     ./rofi.nix # launcher
     ./scripts/scripts.nix # personal scripts
+    ./spicetify.nix
     ./ssh.nix # ssh config
     ./superfile/superfile.nix # terminal file manager
     ./swaylock.nix # lock screen
