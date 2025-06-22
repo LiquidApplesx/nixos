@@ -384,9 +384,9 @@ in
     };
 
     extraConfig = "
-      monitor=DP-1,2560x1440@144,auto-left,auto
-      monitor=DP-2,3440x1440@144,auto-right,auto
-      monitor=eDP-1,1920x1080@60,auto,auto
+      monitor=DP-1,2560x1440@144,auto-left,1
+      monitor=DP-2,3440x1440@144,auto-right,1
+      monitor=eDP-1,1920x1080@60,auto,a1
 
       xwayland {
         force_zero_scaling = true
