@@ -29,6 +29,7 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    gnome-disk-utility
   ];
 
   time.timeZone = "America/New_York";

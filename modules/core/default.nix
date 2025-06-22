@@ -7,6 +7,7 @@
     ./network.nix
     ./nh.nix
     ./pipewire.nix
+    ./polkit.nix
     ./program.nix
     ./security.nix
     ./services.nix
